@@ -1,32 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>fr.miage.jayblanc</groupId>
+  <artifactId>filestore</artifactId>
+  <name>The FileStore Application</name>
+  <version>1.0.0-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <packaging>jar</packaging>
 
-    <name>The FileStore Application</name>
-    <organization>
-        <name>Miage Nancy</name>
-        <url>http://www.miage-nancy.fr</url>
-    </organization>
-    <developers>
-        <developer>
-            <id>nonomoho</id>
-            <name>Arnaud Freismuth</name>
-            <email>arnaudfreismuth@gmail.com</email>
-            <url>http://wiki.jayblanc.fr</url>
-            <organization>MIAGE</organization>
-            <organizationUrl>http://www.miage.fr</organizationUrl>
-            <roles>
-                <role>architect</role>
-                <role>developer</role>
-            </roles>
-            <timezone>Europe/Paris</timezone>
-        </developer>
-    </developers>
+  <organization>
+    <name>Miage Nancy</name>
+    <url>http://www.miage-nancy.fr</url>
+  </organization>
 
-    <groupId>com.miage.m2</groupId>
-    <artifactId>filestore</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+  <developers>
+    <developer>
+      <id>jayblanc</id>
+      <name>Jerome Blanchard</name>
+      <email>jayblanc@gmail.com</email>
+      <url>http://wiki.jayblanc.fr</url>
+      <organization>ATILF - CNRS</organization>
+      <organizationUrl>http://www.atilf.fr</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>Europe/Paris</timezone>
+    </developer>
+  </developers>
+ 
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.12</version>
+  		<scope>test</scope>
+  	</dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+  </dependencies>
 </project>
